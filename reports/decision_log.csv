@@ -1,0 +1,3 @@
+ts,scope,status,canonical,reason_code,reason,owner,evidence
+2026-11-14T10:21:14+00:00,t08,HOLD,HOLD,ESCALATIONS_PENDING_REVIEW,22 escalated artefact(s) still need a human decision; execute only the 'delete' rows after approval,Do Tuan Long (Data Governance Lead),out\poc\actions.csv;out\poc\audit_log.jsonl
+2026-11-14T13:55:51+00:00,t08,GO,GO,PLAN_READY,all exceptions handled or reviewed; deletion plan can be executed,Do Tuan Long (Data Governance Lead),out\poc\actions.csv;out\poc\audit_log.jsonl
