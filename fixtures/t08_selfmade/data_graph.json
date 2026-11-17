@@ -1,0 +1,704 @@
+{
+ "version": "selfmade-1",
+ "note": "SELF-MADE test data \u2014 nothing real",
+ "artefacts": [
+  {
+   "artefact_id": "a001",
+   "type": "raw_video",
+   "subject_ids": [
+    "s_a"
+   ],
+   "parent_ids": [],
+   "uri": "mock://raw/raw_video/a001",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01",
+   "filename": "drive_s_a_000.mp4"
+  },
+  {
+   "artefact_id": "a002",
+   "type": "backup",
+   "subject_ids": [
+    "s_a"
+   ],
+   "parent_ids": [
+    "a001"
+   ],
+   "uri": "mock://glacier/backup/a002",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "a003",
+   "type": "frame",
+   "subject_ids": [
+    "s_a"
+   ],
+   "parent_ids": [
+    "a001"
+   ],
+   "uri": "mock://lake/frame/a003",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "a004",
+   "type": "face_crop",
+   "subject_ids": [
+    "s_a"
+   ],
+   "parent_ids": [
+    "a003"
+   ],
+   "uri": "mock://lake/face_crop/a004",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "a005",
+   "type": "embedding",
+   "subject_ids": [
+    "s_a"
+   ],
+   "parent_ids": [
+    "a004"
+   ],
+   "uri": "mock://vector-db/embedding/a005",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "a006",
+   "type": "annotation",
+   "subject_ids": [
+    "s_a"
+   ],
+   "parent_ids": [
+    "a003"
+   ],
+   "uri": "mock://labels/annotation/a006",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "x01",
+   "type": "training_export",
+   "subject_ids": [
+    "s_a",
+    "s_z"
+   ],
+   "parent_ids": [
+    "a004"
+   ],
+   "uri": "mock://exports/training_export/x01",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "b01",
+   "type": "raw_video",
+   "subject_ids": [
+    "s_b"
+   ],
+   "parent_ids": [],
+   "uri": "mock://raw/raw_video/b01",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01",
+   "filename": "drive_s_b_000.mp4"
+  },
+  {
+   "artefact_id": "b05",
+   "type": "backup",
+   "subject_ids": [
+    "s_b"
+   ],
+   "parent_ids": [
+    "b01"
+   ],
+   "uri": "mock://glacier/backup/b05",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "b02",
+   "type": "frame",
+   "subject_ids": [
+    "s_b"
+   ],
+   "parent_ids": [
+    "b01"
+   ],
+   "uri": "mock://lake/frame/b02",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": "LH-S2",
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "b03",
+   "type": "face_crop",
+   "subject_ids": [
+    "s_b"
+   ],
+   "parent_ids": [
+    "b02"
+   ],
+   "uri": "mock://lake/face_crop/b03",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "b04",
+   "type": "embedding",
+   "subject_ids": [
+    "s_b"
+   ],
+   "parent_ids": [
+    "b03"
+   ],
+   "uri": "mock://vector-db/embedding/b04",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "c01",
+   "type": "raw_video",
+   "subject_ids": [
+    "s_c"
+   ],
+   "parent_ids": [],
+   "uri": "mock://raw/raw_video/c01",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01",
+   "filename": "drive_s_c_000.mp4"
+  },
+  {
+   "artefact_id": "c02",
+   "type": "frame",
+   "subject_ids": [
+    "s_c"
+   ],
+   "parent_ids": [
+    "c01"
+   ],
+   "uri": "mock://lake/frame/c02",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": "LH-S3",
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "c03",
+   "type": "face_crop",
+   "subject_ids": [
+    "s_c"
+   ],
+   "parent_ids": [
+    "c02"
+   ],
+   "uri": "mock://lake/face_crop/c03",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "d00",
+   "type": "raw_video",
+   "subject_ids": [
+    "s_d"
+   ],
+   "parent_ids": [],
+   "uri": "mock://raw/raw_video/d00",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01",
+   "filename": "drive_s_d_000.mp4"
+  },
+  {
+   "artefact_id": "e00",
+   "type": "raw_video",
+   "subject_ids": [
+    "s_e"
+   ],
+   "parent_ids": [],
+   "uri": "mock://raw/raw_video/e00",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01",
+   "filename": "drive_s_e_000.mp4"
+  },
+  {
+   "artefact_id": "de01",
+   "type": "frame",
+   "subject_ids": [
+    "s_d",
+    "s_e"
+   ],
+   "parent_ids": [
+    "d00"
+   ],
+   "uri": "mock://lake/frame/de01",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "d01",
+   "type": "frame",
+   "subject_ids": [
+    "s_d",
+    "s_e",
+    "s_f"
+   ],
+   "parent_ids": [
+    "d00"
+   ],
+   "uri": "mock://lake/frame/d01",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "g01",
+   "type": "raw_video",
+   "subject_ids": [
+    "s_g"
+   ],
+   "parent_ids": [],
+   "uri": "mock://raw/raw_video/g01",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01",
+   "filename": "drive_s_g_000.mp4"
+  },
+  {
+   "artefact_id": "g02",
+   "type": "backup",
+   "subject_ids": [
+    "s_g"
+   ],
+   "parent_ids": [
+    "g01"
+   ],
+   "uri": "mock://glacier/backup/g02",
+   "owner": "data-platform",
+   "acl": [
+    "vendor-y"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "g03",
+   "type": "frame",
+   "subject_ids": [
+    "s_g"
+   ],
+   "parent_ids": [
+    "g01"
+   ],
+   "uri": "mock://lake/frame/g03",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "h01",
+   "type": "raw_video",
+   "subject_ids": [
+    "s_h"
+   ],
+   "parent_ids": [],
+   "uri": "mock://raw/raw_video/h01",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01",
+   "filename": "drive_s_h_000.mp4"
+  },
+  {
+   "artefact_id": "h02",
+   "type": "frame",
+   "subject_ids": [
+    "s_h"
+   ],
+   "parent_ids": [
+    "h01"
+   ],
+   "uri": "mock://lake/frame/h02",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "h03",
+   "type": "face_crop",
+   "subject_ids": [
+    "s_h"
+   ],
+   "parent_ids": [
+    "h02"
+   ],
+   "uri": "mock://lake/face_crop/h03",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "h04",
+   "type": "embedding",
+   "subject_ids": [
+    "s_h"
+   ],
+   "parent_ids": [
+    "h03"
+   ],
+   "uri": "mock://vector-db/embedding/h04",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": false,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "i01",
+   "type": "raw_video",
+   "subject_ids": [
+    "s_i"
+   ],
+   "parent_ids": [],
+   "uri": "mock://raw/raw_video/i01",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01",
+   "filename": "drive_s_i_000.mp4"
+  },
+  {
+   "artefact_id": "i02",
+   "type": "frame",
+   "subject_ids": [
+    "s_i"
+   ],
+   "parent_ids": [
+    "i01"
+   ],
+   "uri": "mock://lake/frame/i02",
+   "owner": "data-platform",
+   "acl": [
+    "vendor-y"
+   ],
+   "legal_hold": "LH-S7",
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "j01",
+   "type": "raw_video",
+   "subject_ids": [
+    "s_j"
+   ],
+   "parent_ids": [],
+   "uri": "mock://raw/raw_video/j01",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01",
+   "filename": "drive_s_j_000.mp4"
+  },
+  {
+   "artefact_id": "j02",
+   "type": "frame",
+   "subject_ids": [
+    "s_j"
+   ],
+   "parent_ids": [
+    "j01"
+   ],
+   "uri": "mock://lake/frame/j02",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": "LH-S8",
+   "origin_known": false,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "j03",
+   "type": "face_crop",
+   "subject_ids": [
+    "s_j"
+   ],
+   "parent_ids": [
+    "j02"
+   ],
+   "uri": "mock://lake/face_crop/j03",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": false,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "k01",
+   "type": "raw_video",
+   "subject_ids": [
+    "s_k"
+   ],
+   "parent_ids": [],
+   "uri": "mock://raw/raw_video/k01",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01",
+   "filename": "drive_s_k_000.mp4"
+  },
+  {
+   "artefact_id": "k02",
+   "type": "frame",
+   "subject_ids": [
+    "s_k",
+    "s_m"
+   ],
+   "parent_ids": [
+    "k01"
+   ],
+   "uri": "mock://lake/frame/k02",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "k03",
+   "type": "face_crop",
+   "subject_ids": [
+    "s_m"
+   ],
+   "parent_ids": [
+    "k02"
+   ],
+   "uri": "mock://lake/face_crop/k03",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "n01",
+   "type": "raw_video",
+   "subject_ids": [
+    "s_n"
+   ],
+   "parent_ids": [],
+   "uri": "mock://raw/raw_video/n01",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01",
+   "filename": "drive_s_n_000.mp4"
+  },
+  {
+   "artefact_id": "o01",
+   "type": "raw_video",
+   "subject_ids": [
+    "s_o"
+   ],
+   "parent_ids": [],
+   "uri": "mock://raw/raw_video/o01",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01",
+   "filename": "drive_s_o_000.mp4"
+  },
+  {
+   "artefact_id": "p01",
+   "type": "raw_video",
+   "subject_ids": [
+    "s_p"
+   ],
+   "parent_ids": [],
+   "uri": "mock://raw/raw_video/p01",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01",
+   "filename": "drive_s_p_000.mp4"
+  },
+  {
+   "artefact_id": "t01",
+   "type": "frame",
+   "subject_ids": [
+    "s_n",
+    "s_o",
+    "s_p"
+   ],
+   "parent_ids": [
+    "n01"
+   ],
+   "uri": "mock://lake/frame/t01",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  },
+  {
+   "artefact_id": "t02",
+   "type": "annotation",
+   "subject_ids": [
+    "s_n",
+    "s_o",
+    "s_p"
+   ],
+   "parent_ids": [
+    "t01"
+   ],
+   "uri": "mock://labels/annotation/t02",
+   "owner": "data-platform",
+   "acl": [
+    "data-platform"
+   ],
+   "legal_hold": null,
+   "origin_known": true,
+   "created_at": "2026-06-01"
+  }
+ ]
+}

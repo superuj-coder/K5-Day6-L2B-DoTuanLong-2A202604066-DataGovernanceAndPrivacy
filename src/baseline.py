@@ -1,4 +1,6 @@
-"""
+"""Baseline T08 (cố tình ngây thơ): với mỗi yêu cầu, "xóa file raw theo tên file", không truy lineage,
+không xét legal hold / acl / origin / nhiều chủ thể.
+
     python -m src.main --track t08 --pipeline src.baseline --output out/baseline --run-name baseline --offline --seed 42
     python -m src.evaluate --track t08 --pred out/baseline/actions.csv --run-name baseline --out reports/metrics_baseline.json
 """

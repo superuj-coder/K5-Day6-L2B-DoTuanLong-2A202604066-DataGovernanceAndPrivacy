@@ -155,7 +155,7 @@ def process(ctx: RunContext, data: dict) -> pd.DataFrame:
     for r in df.itertuples(index=False):   # dry-run: ghi kế hoạch vào audit log cho TỪNG hành động
         ctx.audit.log(actor="pipeline", action=f"plan:{r.action}", item_id=r.artefact_id, reason=r.reason_code,
                       request_id=r.request_id, dry_run=bool(ctx.param("dry_run", True)))
-    ctx.stats.update({"n_requests": len(requests), "n_actions": len(df),
+    ctx.stats.update({"n_items": len(df), "n_requests": len(requests), "n_actions": len(df),
                       "by_action": df.action.value_counts().to_dict()})
     return df
 

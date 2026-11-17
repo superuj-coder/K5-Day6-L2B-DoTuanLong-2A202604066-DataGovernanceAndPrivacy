@@ -1,0 +1,3 @@
+file_id,path,source,license,split,group_id,sha256
+data_graph,data_graph.json,synthetic:tools/make_selfmade_t08.py (self-made by the group),"CC0-1.0 (self-made, synthetic)",na,na,97c3939e1ebb95500514090fa45815ab5456b919bfc686548709b6eb036adf3a
+requests,requests.json,synthetic:tools/make_selfmade_t08.py (self-made by the group),"CC0-1.0 (self-made, synthetic)",na,na,49cb50cdf4ee5a7ee8429ccf5f28d96ff771d6c45c8564d43f767fea8508bca5

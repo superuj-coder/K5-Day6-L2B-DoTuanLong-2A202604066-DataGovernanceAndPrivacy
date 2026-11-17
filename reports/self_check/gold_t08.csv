@@ -1,0 +1,53 @@
+request_id,artefact_id,expected_action,why
+DR-001,a0015,delete,raw của subj_01; không hold/acl/origin lạ; chỉ 1 chủ thể
+DR-001,a0016,delete,backup của raw a0015; chỉ subj_01
+DR-001,a0017,delete,frame con của a0015; chỉ subj_01
+DR-001,a0018,delete,face_crop con của a0017
+DR-001,a0019,delete,embedding con của a0018; origin_known=true
+DR-001,a0020,delete,annotation con của a0017
+DR-001,a0011,escalate,frame chung subj_00+subj_01; subj_00 KHÔNG có yêu cầu xóa
+DR-001,a0014,escalate,annotation chung subj_00+subj_01; subj_00 không yêu cầu
+DR-001,a0212,escalate,training_export 9 chủ thể; hầu hết không yêu cầu xóa
+DR-002,a0043,retain_legal_hold,raw có legal_hold LH-2026-03
+DR-002,a0044,delete,backup (chính nó không bị hold; hold chỉ áp cho artefact bị hold)
+DR-002,a0045,delete,frame con; không cờ nào
+DR-002,a0046,delete,face_crop con
+DR-002,a0047,delete,embedding con; origin_known=true
+DR-002,a0048,delete,annotation con
+DR-002,a0211,escalate,training_export 10 chủ thể; subj_06 và subj_10 không yêu cầu
+DR-004,a0071,delete,raw của subj_05
+DR-004,a0072,delete,backup của a0071
+DR-004,a0073,delete,frame con
+DR-004,a0074,delete,face_crop con; origin_known=true
+DR-004,a0075,escalate,embedding origin_known=false
+DR-004,a0078,delete,face_crop (cha của a0079) origin_known=true
+DR-004,a0079,escalate,embedding origin_known=false
+DR-004,a0083,escalate,embedding origin_known=false
+DR-004,a0076,delete,annotation con của a0073
+DR-004,a0067,delete,frame chung subj_04+subj_05; CẢ HAI đều có yêu cầu xóa (DR-003 và DR-004)
+DR-004,a0070,delete,annotation chung subj_04+subj_05; cả hai đều yêu cầu
+DR-004,a0211,escalate,training_export nhiều chủ thể chưa yêu cầu
+DR-004,a0212,escalate,training_export nhiều chủ thể chưa yêu cầu
+DR-005,a0099,retain_legal_hold,raw có legal_hold LH-2026-07
+DR-005,a0100,delete,backup của a0099; không cờ
+DR-005,a0101,delete,frame con; không cờ
+DR-005,a0103,delete,embedding con; origin_known=true
+DR-005,a0211,escalate,training_export nhiều chủ thể chưa yêu cầu
+DR-006,a0113,delete,raw của subj_08
+DR-006,a0114,delete,backup
+DR-006,a0123,delete,frame chung subj_08+subj_09; cả hai có yêu cầu (DR-006 và DR-007)
+DR-006,a0126,delete,annotation chung subj_08+subj_09; cả hai yêu cầu
+DR-006,a0125,delete,embedding con; chỉ subj_08
+DR-007,a0123,delete,frame chung subj_08+subj_09; cả hai yêu cầu
+DR-007,a0126,delete,annotation chung; cả hai yêu cầu
+DR-007,a0211,escalate,training_export có subj_09 cùng nhiều người chưa yêu cầu
+DR-008,a0155,delete,raw của subj_11
+DR-008,a0156,escalate,backup có acl=vendor-x; data-platform không có quyền
+DR-008,a0157,delete,frame con; acl data-platform
+DR-008,a0159,delete,embedding con; origin_known=true
+DR-008,a0211,escalate,training_export nhiều chủ thể chưa yêu cầu
+DR-010,a0197,delete,raw của subj_14
+DR-010,a0198,delete,backup
+DR-010,a0201,delete,embedding con; origin_known=true
+DR-010,a0209,delete,embedding con
+DR-010,a0211,escalate,training_export nhiều chủ thể chưa yêu cầu

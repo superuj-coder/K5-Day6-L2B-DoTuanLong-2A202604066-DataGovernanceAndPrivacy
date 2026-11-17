@@ -1,0 +1,46 @@
+request_id,artefact_id,expected_action,why
+R-S1,a001,delete,S1 raw đơn giản
+R-S1,a002,delete,S1 backup
+R-S1,a003,delete,S1 frame
+R-S1,a004,delete,S1 face_crop
+R-S1,a005,delete,S1 embedding
+R-S1,a006,delete,S1 annotation
+R-S1,x01,escalate,S1 export chứa s_z (không yêu cầu) -> không được xóa nguyên khối
+R-S10,k01,delete,S9 raw
+R-S10,k02,escalate,S9 chung với s_m (không yêu cầu)
+R-S10,k03,escalate,"S9 chỉ chứa s_m, nằm dưới frame chung -> không được xóa"
+R-S11,n01,delete,S10 raw của n
+R-S11,t01,delete,"S10 chung 3 người, cả 3 yêu cầu -> xóa"
+R-S11,t02,delete,S10 annotation chung 3 người
+R-S12,o01,delete,S10 raw của o
+R-S12,t01,delete,"S10 chung 3 người, cả 3 yêu cầu -> xóa"
+R-S12,t02,delete,S10 annotation chung 3 người
+R-S13,p01,delete,S10 raw của p
+R-S13,t01,delete,"S10 chung 3 người, cả 3 yêu cầu -> xóa"
+R-S13,t02,delete,S10 annotation chung 3 người
+R-S2,b01,delete,S2 raw không hold
+R-S2,b02,retain_legal_hold,S2 frame bị legal hold -> giữ
+R-S2,b03,delete,S2 con của artefact bị hold: xóa (giả định hold_scope=self)
+R-S2,b04,delete,S2 embedding
+R-S2,b05,delete,S2 backup
+R-S3,c01,escalate,S3 chưa xác minh danh tính
+R-S3,c02,escalate,S3 có hold nhưng chưa xác minh danh tính -> escalate trước
+R-S3,c03,escalate,S3 chưa xác minh danh tính
+R-S4,d00,delete,S4 raw của d
+R-S4,d01,escalate,"S4 chung d,e,f; f không yêu cầu -> escalate"
+R-S4,de01,delete,"S4 chung d,e; cả hai đều yêu cầu -> xóa"
+R-S5,d01,escalate,"S4 chung d,e,f; f không yêu cầu -> escalate"
+R-S5,de01,delete,"S4 chung d,e; cả hai đều yêu cầu -> xóa"
+R-S5,e00,delete,S4 raw của e
+R-S6,g01,delete,S5 raw
+R-S6,g02,escalate,"S5 acl=vendor-y, data-platform không có quyền"
+R-S6,g03,delete,S5 frame
+R-S7,h01,delete,S6 raw
+R-S7,h02,delete,S6 frame
+R-S7,h03,delete,S6 face_crop origin biết
+R-S7,h04,escalate,S6 origin_known=false
+R-S8,i01,delete,S7 raw
+R-S8,i02,retain_legal_hold,S7 vừa hold vừa acl vendor -> legal hold ưu tiên hơn acl
+R-S9,j01,delete,S8 raw
+R-S9,j02,retain_legal_hold,S8 hold + origin lạ -> hold ưu tiên hơn origin
+R-S9,j03,escalate,"S8 con có origin lạ, không hold -> escalate"
